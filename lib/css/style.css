@@ -655,6 +655,10 @@ a{
     background-color: transparent;
 }
 
+#game_allbets_log table tr{
+    padding-top: 0px !important;
+}
+
 #game_allbets_log thead tr th{
     width: 320px;
     height: 50px;
