@@ -698,3 +698,7 @@ a{
     font-size: 10px;
     line-height: 12px;
 }
+
+#safeLinkForm .image i, #safeLinkForm .description #unknownLink{
+    color: #F1C40F;
+}
