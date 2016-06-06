@@ -703,6 +703,6 @@ a{
     color: #F1C40F;
 }
 
-#safeLinkDoRedirectButton, #safeLinkCancelRedirectButton{
+.safeLinkDoRedirectButton, #safeLinkCancelRedirectButton{
     display: inline-block;
 }
