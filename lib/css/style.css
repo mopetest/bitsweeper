@@ -644,22 +644,26 @@ a{
     font-weight: 600;
 }
 
-#game_allbets_log{
+#game_allbets_log, #game_mybets_log{
     top: 480px;
     width: 680px;
     position: absolute;
     left: calc(50% - 180px);
 }
 
-#game_allbets_log table{
+#game_mybets_log{
+    display: none;
+}
+
+#game_allbets_log table, #game_mybets_log table{
     background-color: transparent;
 }
 
-#game_allbets_log table tr{
+#game_allbets_log table tr, #game_mybets_log table tr{
     padding-top: 0px !important;
 }
 
-#game_allbets_log thead tr th{
+#game_allbets_log thead tr th, #game_mybets_log thead tr th{
     width: 320px;
     height: 50px;
     line-height: 50px;
@@ -671,22 +675,22 @@ a{
     padding: 0;
 }
 
-#game_allbets_log tbody tr td{
+#game_allbets_log tbody tr td, #game_mybets_log tbody tr td{
     height: 26px;
     padding: 0 0 0 10px;
     color: #fff;
 }
 
-#game_allbets_log tbody tr td a{
+#game_allbets_log tbody tr td a, #game_mybets_log tbody tr td a{
     font-weight: bold;
     color: white;
 }
 
-#game_allbets_log tbody tr td.win{
+#game_allbets_log tbody tr td.win, #game_mybets_log tbody tr td.win{
     border-left: 4px solid #8D4;
 }
 
-#game_allbets_log tbody tr td.lose{
+#game_allbets_log tbody tr td.lose, #game_mybets_log tbody tr td.lose{
     border-left: 4px solid #E74C3C;
 }
 

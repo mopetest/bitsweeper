@@ -5,18 +5,18 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes" />
         <title>Sweepabit - Beta | The bitcoin minesweeper casino!</title>
 
-        <meta name="description" content="Sweepabit is a bitcoin casino designed like a minesweeper game! Place your bets, and click the tiles avoiding hitting the hidden bombs. Faucet: 2 free bits every 5 minutes." />
+        <meta name="description" content="Sweepabit is a bitcoin casino designed as a minesweeper game! Place your bets, and click the tiles avoiding hitting the hidden bombs. Faucet: 2 free bits every 5 minutes." />
 
-        <link rel="canonical" href="http://sweepabit.com/" />
+        <!-- Credits: http://sweepabit.com/LICENSE --><link rel="canonical" href="http://sweepabit.com/" /><!-- End credits -->
 
         <meta name="google-site-verification" content="edZvMpajK8pxhEE5ih_Po4uVbZIiJdAZ2dwhYaJSyMo" />
 
-        <link rel="stylesheet" type="text/css" href="https://oss.maxcdn.com/semantic-ui/2.1.7/semantic.min.css" />
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.1.8/semantic.min.css" />
         <link rel="stylesheet" type="text/css" href="lib/css/style.css" />
         
-        <script type="text/javascript" src="https://oss.maxcdn.com/socket.io-client/1.3.2/socket.io.min.js"></script>
-        <script type="text/javascript" src="https://oss.maxcdn.com/jquery/2.1.4/jquery.min.js"></script>
-        <script type="text/javascript" src="https://oss.maxcdn.com/semantic-ui/2.1.7/semantic.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/1.4.6/socket.io.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.1.8/semantic.min.js"></script>
         <script type="text/javascript" src="lib/js/jquery.cookie.js"></script>
         <script type="text/javascript" src="lib/js/strip-combining-marks.js"></script>
     </head>
@@ -171,7 +171,21 @@
             <table class="ui unstackable table">
                 <thead>
                     <tr>
-                        <th>Bet History</th>
+                        <th>All bets History<small> - <a id="viewMyBetsButton">My bets</a></small></th>
+                        <th></th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody id="game_allbets_logs">
+                </tbody>
+            </table>
+        </div>
+
+        <div id="game_mybets_log">
+            <table class="ui unstackable table">
+                <thead>
+                    <tr>
+                        <th>My bets History<small> - <a id="viewAllBetsButton">All bets</a></small></th>
                         <th></th>
                         <th></th>
                     </tr>
