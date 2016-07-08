@@ -711,6 +711,10 @@ a{
     display: inline-block;
 }
 
+#jackpotHelpModal{
+    background-color: black;
+}
+
 #jackpot{
     width: 100%;
     text-align: center;
