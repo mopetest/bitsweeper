@@ -77,8 +77,91 @@
                 </div>
             </div>
         </div>
+
+        <div class="ui basic modal" id="jackpotHelpModal">
+            <div class="header">
+                Jackpot Explanation! (Alpha testing phase)
+            </div>
+            <div class="content">
+                <div class="description">
+                    <p>The jackpot is quite simple to understand and is provably fair.</p>
+                    <p>For every bet, <i>0.1%</i> of the wagered amount is placed into the jackpot.</p>
+                    <p>Everyone has ~<i>0.00001%</i> chances to win, at most, <i>80%</i> of the jackpot.</p>
+                    <p><u>More detailed:</u></p>
+                    <p>You need to place 7 bets streak (win or lose doesn't matter) where every bet needs to have an outcome within a certain range.<br>(Outcomes being rolled by moneypot with the provably fair system)<br>If you win the jackpot, you will receive a % of the jackpot depending on how much in average you wagered for every bets during the streak.</p>
+                    <p></p>
+
+                    <div class="ui grid">
+                        <div class="eight wide column">
+                            <table class="ui celled table">
+                                <thead>
+                                    <tr>
+                                        <th colspan="2">Outcomes range (inclusives) <br>To see your bet outcome, click on the bet's id in history</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1st Bet</td>
+                                        <td>429,496,729 - 858,993,458</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2nd Bet</td>
+                                        <td>858,993,459 - 1,288,490,187</td>
+                                    </tr>
+                                    <tr>
+                                        <td>3rd Bet</td>
+                                        <td>1,288,490,188 - 1,717,986,917</td>
+                                    </tr>
+                                    <tr>
+                                        <td>4th Bet</td>
+                                        <td>1,717,986,918 - 2,147,483,647</td>
+                                    </tr>
+                                    <tr>
+                                        <td>5th Bet</td>
+                                        <td>2,147,483,648 - 2,576,980,376</td>
+                                    </tr>
+                                    <tr>
+                                        <td>6th Bet</td>
+                                        <td>2,576,980,377 - 3,006,477,106</td>
+                                    </tr>
+                                    <tr>
+                                        <td>7th Bet</td>
+                                        <td>3,006,477,107 - 3,435,973,835</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="eight wide column">
+                            <table class="ui celled table">
+                                <thead>
+                                    <tr>
+                                        <th colspan="2">Price % per average wagered for every bets during the streak</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>≥ 10 Bits</td>
+                                        <td>20% of jackpot</td>
+                                    </tr>
+                                    <tr>
+                                        <td>≥ 1,000 Bits</td>
+                                        <td>50% of jackpot</td>
+                                    </tr>
+                                    <tr>
+                                        <td>≥ 100,000 Bits</td>
+                                        <td>80% of jackpot</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
         
         <div id="logo"></div>
+        <div id="jackpot">Jackpot: <span id="jackpot_pot">0.00</span> Bits! <i class="help icon" id="jackpot_help_button"></i></div>
 
         <div id="game_container">
             <div style="width:320px; position: absolute; top: 320px; left: 320px;">
