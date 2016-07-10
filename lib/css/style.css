@@ -711,10 +711,6 @@ a{
     display: inline-block;
 }
 
-#jackpotHelpModal{
-    background-color: black;
-}
-
 #jackpot{
     width: 100%;
     text-align: center;
@@ -727,11 +723,16 @@ a{
     color: gold;
 }
 
+#jackpot a{
+    color: white;
+}
+
 #jackpot i{
     cursor: pointer;
     border: 1px solid white;
     border-radius: 50%;
     opacity: 0.3;
+    color: white;
 }
 
 #jackpot i:hover{
